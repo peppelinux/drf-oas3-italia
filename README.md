@@ -1,50 +1,15 @@
-:warning: [removeme] Questo file è stato creato seguendo il  [README starter kit](https://github.com/italia/readme-starterkit) [removeme] :warning:
+[![License](https://img.shields.io/github/license/peppelinux/drf-oas3-italia.svg)](https://github.com/peppelinux/drf-oas3-italia/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/peppelinux/drf-oas3-italia.svg)](https://github.com/peppelinux/drf-oas3-italia/issues)
 
-[![License](https://img.shields.io/github/license/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/issues)
-[![Join the #design channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
-[![18app on forum.italia.it](https://img.shields.io/badge/Forum-18app-blue.svg)](https://forum.italia.it/c/18app-carta-docente)
+# Django Rest Framework italia OpenAPIv3
 
-# Titolo
+Django application on top of DRF that implements the [Italian Interpolability Guideline for PA](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html)
 
-> Sottotitolo / Slogan / Descrizione breve
 
-*Read this in other languages: [English](README.EN.md).*
+# Setup
 
-## Immagini e GIF
+````
+pip install drf_italia
+````
 
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-# Indice
-
-- [Come iniziare](#come-iniziare)
-- [Come contribuire](#come-contribuire)
-- [Manutenzione](#manutenzione)
-- [Licenza](#licenza)
-
-# Come iniziare
-
-## Come installare
-
-## Documentazione
-
-# Come contribuire
-
-## Community
-
-### Code of conduct
-
-### Responsible Disclosure
-
-### Segnalazione bug e richieste di aiuto
-
-# Manutenzione 
-
-# Licenza 
-
-## Licenza generale 
-
-## Autori e Copyright
-
-## Licenze software dei componenti di terze parti
+In your django project include `drf_italia` in `settings.INSTALLED_APPS`.
