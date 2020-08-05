@@ -13,6 +13,23 @@ pip install drf_italia
 ````
 
 In your django project include `drf_italia` in `settings.INSTALLED_APPS`.
+Add
+
+````
+# API
+REST_FRAMEWORK = {
+    #'DEFAULT_PERMISSION_CLASSES': [
+    #    'rest_framework.permissions.IsAuthenticated',
+    #],
+    # OTHERS ...
+
+    # OAS 3 specs
+    'DEFAULT_SCHEMA_CLASS': 'drf_italia.openapi_italia.AgidAutoSchema',
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.OAS3JSONParser',
+    ],
+}
+````
 
 # Usage
 
