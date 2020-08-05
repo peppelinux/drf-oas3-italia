@@ -80,3 +80,14 @@ if 'rest_framework' in settings.INSTALLED_APPS:
 
     # ...
 ````
+
+# Warnings
+
+Together with the authors of django-rest-frameowork we decided to keep some commits in the master project (DRF) and specialize this extension in a separate app, precisely drf_italia, this app.
+The PR in DRF necessary for this app to work are the following:
+
+- https://github.com/encode/django-rest-framework/pull/7463
+- https://github.com/encode/django-rest-framework/pull/7462
+
+Waiting for DRF to combine these contributions and an official version (it may take some time). It is possible to use the following fork (which does not need this app!):
+https://github.com/peppelinux/django-rest-framework/tree/agid_oas3
