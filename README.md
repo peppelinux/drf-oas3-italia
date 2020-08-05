@@ -13,7 +13,8 @@ pip install drf_italia
 ````
 
 In your django project include `drf_italia` in `settings.INSTALLED_APPS`.
-Add
+
+Also configure`settings.REST_FRAMEWORK` as follow:
 
 ````
 # API
