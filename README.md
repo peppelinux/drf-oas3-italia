@@ -14,7 +14,7 @@ pip install drf_italia
 
 In your django project include `drf_italia` in `settings.INSTALLED_APPS`.
 
-Also configure`settings.REST_FRAMEWORK` as follow:
+Also configure `settings.REST_FRAMEWORK` as follow:
 
 ````
 # API
@@ -80,7 +80,7 @@ urlpatterns = [
     # here other urls definitions ...
 ]
 
-if 'rest_framework' in settings.INSTALLED_APPS:
+if 'drf_italia' in settings.INSTALLED_APPS:
     router = routers.DefaultRouter()
     #  router.register('api/ricerca', api_views.ApiDocenteViewSet)
     urlpatterns += path('api', include(router.urls)),
